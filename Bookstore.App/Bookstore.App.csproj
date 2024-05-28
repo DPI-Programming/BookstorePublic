@@ -138,6 +138,18 @@
     <Compile Include="Migrations\202405281638148_initial.Designer.cs">
       <DependentUpon>202405281638148_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405281646009_AddGenre.cs" />
+    <Compile Include="Migrations\202405281646009_AddGenre.Designer.cs">
+      <DependentUpon>202405281646009_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405281646581_AddGenre2.cs" />
+    <Compile Include="Migrations\202405281646581_AddGenre2.Designer.cs">
+      <DependentUpon>202405281646581_AddGenre2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405281649076_BookGenreRelation.cs" />
+    <Compile Include="Migrations\202405281649076_BookGenreRelation.Designer.cs">
+      <DependentUpon>202405281649076_BookGenreRelation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -203,6 +215,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202405281638148_initial.resx">
       <DependentUpon>202405281638148_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405281646009_AddGenre.resx">
+      <DependentUpon>202405281646009_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405281646581_AddGenre2.resx">
+      <DependentUpon>202405281646581_AddGenre2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405281649076_BookGenreRelation.resx">
+      <DependentUpon>202405281649076_BookGenreRelation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
