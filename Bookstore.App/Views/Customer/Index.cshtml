@@ -9,5 +9,11 @@
 
 @foreach (var customer in Model)
 {
-    <p>@customer.FirstName @customer.LastName</p>
+    <p>
+        @Html.ActionLink("Link", "Details", "Customer", new { id = customer.Id}, new {@class = "btn btn-primary"})  
+        @customer.FirstName 
+        @customer.LastName
+    </p>
+    
+    <a class="btn btn-primary" href="/Customer/Details/@customer.Id">Link</a>
 }
