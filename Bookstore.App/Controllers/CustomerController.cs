@@ -40,6 +40,7 @@ namespace Bookstore.App.Controllers
         {
             
             
+            customer.IsActive = true;
             customer.CreationDate = DateTime.Now;
             customer.CreatedBy = User.Identity.Name;
             customer.LastName = customer.LastName;
