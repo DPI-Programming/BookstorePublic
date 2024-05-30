@@ -1,0 +1,19 @@
+﻿@model Bookstore.App.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.FirstName @Model.LastName Details</h2>
+
+
+@if (Model.DateOfBirth != null)
+{
+    <p>Age: @Model.DateOfBirth.Value.ToShortDateString()</p>
+}
+else
+{
+    <p>Age Not Provided</p>
+}
+
+

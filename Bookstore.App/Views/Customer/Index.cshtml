@@ -1,7 +1,13 @@
-﻿
+﻿@using Bookstore.App.Models
+@model List<Customer>
+
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>List of customers</h2>
 
+@foreach (var customer in Model)
+{
+    <p>@customer.FirstName @customer.LastName</p>
+}
