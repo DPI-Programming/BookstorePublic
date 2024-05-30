@@ -13,6 +13,7 @@ namespace Bookstore.App.Controllers
         private BookstoreDbContext _context = new BookstoreDbContext();
 
         // GET: Customer
+        [HttpGet]
         public ActionResult Index()
         {
             List<Customer> list = new List<Customer>();   
@@ -21,6 +22,7 @@ namespace Bookstore.App.Controllers
             return View(list);
         }
 
+        [HttpGet]
         public ActionResult Details(int id)
         {
             Customer customer = _context.Customers.SingleOrDefault(c => c.Id == id);
@@ -50,7 +52,7 @@ namespace Bookstore.App.Controllers
             _context.SaveChanges();
             
             
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }
