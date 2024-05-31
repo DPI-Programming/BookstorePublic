@@ -30,7 +30,7 @@
         </div>
         <div>
             @Html.LabelFor(m => m.IsActive)
-            @Html.DropDownListFor(m => m.IsActive, selectStatus, new { @class = "form-control" })
+            @Html.DropDownListFor(m => m.IsActive, selectStatus, new { @class = "form-select" })
             @Html.ValidationMessageFor(m => m.IsActive, null, new { @class = "text-danger" })
         </div>
     </div>
