@@ -78,6 +78,7 @@ namespace Bookstore.App.Controllers
             viewModel.SelectStatus = new List<BooleanDropDownListOption>()
             {
                 new BooleanDropDownListOption(true, "Active Customer"),
+                new BooleanDropDownListOption(true, "Really Active Customer"),                
                 new BooleanDropDownListOption(false, "Inactive Customer")
             };
 
