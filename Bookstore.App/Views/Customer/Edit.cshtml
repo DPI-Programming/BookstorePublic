@@ -42,7 +42,7 @@
         </div>
         <div class="col-xl-4">
             @Html.LabelFor(m => m.DateOfBirth)
-            @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control datepicker" })
             @Html.ValidationMessageFor(m => m.DateOfBirth, null, new { @class = "text-danger" })
         </div>
     </div>
